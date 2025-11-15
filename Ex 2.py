@@ -4,10 +4,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras import layers
 import matplotlib.pyplot as plt
 
-url="/content/House Price Dataset.csv"
+url="House Price Dataset.csv"
 data=pd.read_csv(url)
 
-data
+data.head()
 
 x=data[['bedrooms','sqft_living']]
 y=data['price']/100000
